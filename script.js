@@ -1,443 +1,244 @@
-document.getElementById("tokens");
-let randomizer = Math.ceil(Math.random()*36);
-console.log(randomizer);
-let tokens = 1000;
-let tokensPlaced;
-$("#no1").on("click", function(){tokensPlaced = 1});
-$("#no5").on("click", function(){tokensPlaced = 5});
-$("#no10").on("click", function(){tokensPlaced = 10});
-$("#no25").on("click", function(){tokensPlaced = 25});
-$("#no50").on("click", function(){tokensPlaced = 50});
-$("#no100").on("click", function(){tokensPlaced = 100});
-$("#no500").on("click", function(){tokensPlaced = 500});
-$("#no1000").on("click", function(){tokensPlaced = 1000});
-    $("#1").on("click", function(){
-        if(tokens >= tokensPlaced){
-            console.log("clicked");
-            if(randomizer == 1){
-                tokens += tokensPlaced*30;
-            }else{
-                tokens -= tokensPlaced;
-            }randomizer = Math.ceil(Math.random()*36);
-            console.log(randomizer);
-        }
-    })
-    //this whole line below is #1 repeated
-    $("#2").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 2){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
-        }
-    })
-    $("#3").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 3){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+let tokensPlaced = 0;
+let tokens = 10000;
+setInterval(function() {
+    document.getElementById("tokens").textContent = (`${tokens}`)
+}, 10)
+let num1 = 0,
+    num2 = 0,
+    num3 = 0,
+    num4 = 0,
+    num5 = 0,
+    num6 = 0,
+    num7 = 0,
+    num8 = 0,
+    num9 = 0,
+    num10 = 0,
+    num11 = 0,
+    num12 = 0,
+    num13 = 0,
+    num14 = 0,
+    num15 = 0,
+    num16 = 0,
+    num17 = 0,
+    num18 = 0,
+    num19 = 0,
+    num20 = 0,
+    num21 = 0,
+    num22 = 0,
+    num23 = 0,
+    num24 = 0,
+    num25 = 0,
+    num26 = 0,
+    num27 = 0,
+    num28 = 0,
+    num29 = 0,
+    num30 = 0,
+    num31 = 0,
+    num32 = 0,
+    num33 = 0,
+    num34 = 0,
+    num35 = 0,
+    num36 = 0,
+    red = 0,
+    black = 0,
+    odd = 0,
+    even = 0,
+    toThirtySix = 0,
+    toThirtySix2 = 0,
+    toEighteen = 0,
+    toTwelve = 0,
+    toTwentyFour = 0;
+let randy = Math.ceil(Math.random() * 36);
+console.log(randy)
+$("#no1").on("click", function() { tokensPlaced = 1 });
+$("#no5").on("click", function() { tokensPlaced = 5 });
+$("#no10").on("click", function() { tokensPlaced = 10 });
+$("#no25").on("click", function() { tokensPlaced = 25 });
+$("#no50").on("click", function() { tokensPlaced = 50 });
+$("#no100").on("click", function() { tokensPlaced = 100 });
+$("#no500").on("click", function() { tokensPlaced = 500 });
+$("#no1000").on("click", function() { tokensPlaced = 1000 });
+$("#1").on("click", function() { num1 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#2").on("click", function() { num2 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#3").on("click", function() { num3 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#4").on("click", function() { num4 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#5").on("click", function() { num5 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#6").on("click", function() { num6 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#7").on("click", function() { num7 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#8").on("click", function() { num8 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#9").on("click", function() { num9 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#10").on("click", function() { num10 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#11").on("click", function() { num11 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#12").on("click", function() { num12 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#13").on("click", function() { num13 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#14").on("click", function() { num14 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#15").on("click", function() { num15 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#16").on("click", function() { num16 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#17").on("click", function() { num17 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#18").on("click", function() { num18 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#19").on("click", function() { num19 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#20").on("click", function() { num20 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#21").on("click", function() { num21 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#22").on("click", function() { num22 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#23").on("click", function() { num23 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#24").on("click", function() { num24 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#25").on("click", function() { num25 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#26").on("click", function() { num26 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#27").on("click", function() { num27 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#28").on("click", function() { num28 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#29").on("click", function() { num29 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#20").on("click", function() { num30 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#31").on("click", function() { num31 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#32").on("click", function() { num32 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#33").on("click", function() { num33 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#34").on("click", function() { num34 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#35").on("click", function() { num35 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#36").on("click", function() { num36 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#odd").on("click", function() { odd += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#even").on("click", function() { even += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseRed").on("click", function() { red += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseBlack").on("click", function() { black += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseFirstDiv").on("click", function() { toTwelve += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseSecondDiv").on("click", function() { toTwentyFour += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseThirdDiv").on("click", function() { toThirtySix += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseOneToEighteen").on("click", function() { toEighteen += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#chooseNineteenToThirtySix").on("click", function() { toThirtySix2 += 1 * tokensPlaced, tokens -= tokensPlaced });
+$("#sub").on("click", function() {
+    if (randy == 1 && num1 >= 1) {
+        tokens += num1 * 30;
     }
-    })
-    $("#4").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 4){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 2 && num2 >= 1) {
+        tokens += num2 * 30;
     }
-    })
-    $("#5").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 5){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 3 && num3 >= 1) {
+        tokens += num3 * 30;
     }
-    })
-    $("#6").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 6){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 4 && num4 >= 1) {
+        tokens += num4 * 30;
     }
-    })
-    $("#7").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 7){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 5 && num5 >= 1) {
+        tokens += num5 * 30;
     }
-    })
-    $("#8").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 8){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 6 && num6 >= 1) {
+        tokens += num6 * 30;
     }
-    })
-    $("#9").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 9){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 7 && num7 >= 1) {
+        tokens += num7 * 30;
     }
-    })
-    $("#10").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 10){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 8 && num8 >= 1) {
+        tokens += num8 * 30;
     }
-    })
-    $("#11").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 11){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 9 && num9 >= 1) {
+        tokens += num9 * 30;
     }
-    })
-    $("#12").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 12){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 10 && num10 >= 1) {
+        tokens += num10 * 30;
     }
-    })
-    $("#13").on("click", function(){
-        if(tokens >= tokensPlaced){
-        if(randomizer == 13){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 11 && num11 >= 1) {
+        tokens += num11 * 30;
     }
-    })
-    $("#14").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 14){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 12 && num12 >= 1) {
+        tokens += num12 * 30;
     }
-    })
-    $("#15").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 15){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 13 && num13 >= 1) {
+        tokens += num13 * 30;
     }
-    })
-    $("#16").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 16){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 14 && num14 >= 1) {
+        tokens += num14 * 30;
     }
-    })
-    $("#17").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 17){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 15 && num15 >= 1) {
+        tokens += num15 * 30;
     }
-    })
-    $("#18").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 18){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 16 && num16 >= 1) {
+        tokens += num16 * 30;
     }
-    })
-    $("#19").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 19){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 17 && num17 >= 1) {
+        tokens += num17 * 30;
     }
-    })
-    $("#20").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 20){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 18 && num18 >= 1) {
+        tokens += num18 * 30;
     }
-    })
-    $("#21").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 21){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 19 && num19 >= 1) {
+        tokens += num19 * 30;
     }
-    })
-    $("#22").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 22){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 20 && num20 >= 1) {
+        tokens += num20 * 30;
     }
-    })
-    $("#23").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 23){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 21 && num21 >= 1) {
+        tokens += num21 * 30;
     }
-    })
-    $("#24").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 24){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 22 && num22 >= 1) {
+        tokens += num22 * 30;
     }
-    })
-    $("#25").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 25){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 23 && num23 >= 1) {
+        tokens += num23 * 30;
     }
-    })
-    $("#26").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 26){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 24 && num24 >= 1) {
+        tokens += num24 * 30;
     }
-    })
-    $("#27").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 27){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 25 && num25 >= 1) {
+        tokens += num25 * 30;
     }
-    })
-    $("#28").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 28){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 26 && num26 >= 1) {
+        tokens += num26 * 30;
     }
-    })
-    $("#29").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 29){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 27 && num27 >= 1) {
+        tokens += num27 * 30;
     }
-    })
-    $("#30").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 30){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 28 && num28 >= 1) {
+        tokens += num28 * 30;
     }
-    })
-    $("#31").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 31){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 29 && num29 >= 1) {
+        tokens += num29 * 30;
     }
-    })
-    $("#32").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 32){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 30 && num30 >= 1) {
+        tokens += num30 * 30;
     }
-    })
-    $("#33").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 33){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 31 && num31 >= 1) {
+        tokens += num31 * 30;
     }
-    })
-    $("#34").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 34){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 32 && num32 >= 1) {
+        tokens += num32 * 30;
     }
-    })
-    $("#35").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 35){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
-        }
-    })
-    $("#36").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 36){
-            tokens += tokensPlaced*30;
-        }else{
-            tokens -= tokensPlaced;
-        }randomizer = Math.ceil(Math.random()*36);
-        console.log(randomizer);
+    if (randy == 33 && num33 >= 1) {
+        tokens += num33 * 30;
     }
-    })
-    $("#chooseRed").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer == 4 || randomizer == 10 || randomizer == 16 || randomizer == 22 || randomizer == 28  || randomizer == 34 || randomizer == 2 || randomizer == 8 || randomizer == 14 || randomizer == 20 || randomizer == 826 || randomizer == 32 || randomizer == 6 || randomizer == 12 || randomizer == 18 || randomizer == 24 || randomizer == 30 || randomizer == 36){
-                tokens += tokensPlaced;
-            }else{
-                tokens -= tokensPlaced;
-            }randomizer = Math.ceil(Math.random()*36);
-            console.log(randomizer);
-        }
-    })
-    $("#chooseBlack").on("click", function(){
-        if(tokens >= tokensPlaced){
-            if(randomizer != 4 && randomizer != 10 && randomizer != 16 && randomizer != 22 && randomizer != 28  && randomizer != 34 && randomizer != 2 && randomizer != 8 && randomizer != 14 && randomizer != 20 && randomizer != 26 && randomizer != 32 && randomizer != 6 && randomizer != 12 && randomizer != 18 && randomizer != 24 && randomizer != 30 && randomizer != 36){
-                tokens += tokensPlaced;
-            }else{
-                tokens -= tokensPlaced;
-            }randomizer = Math.ceil(Math.random()*36);
-        }
-    })
-$("#chooseOneToEighteen").on("click", function(){
-    if(randomizer <= 18){
-        tokens += tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-    console.log(randomizer);
-})
-$("#choosenineTeenToThirtySix").on("click", function(){
-    if(randomizer > 18){
-        tokens += tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-    console.log(randomizer);
-})
-setInterval(sub, 10);
-function sub(){document.getElementById("tokens").textContent = (`${tokens}`)};
-$("#even").on("click", function(){
-    if(randomizer % 2 == 0){
-        tokens += tokensPlaced
-    }else{
-        tokens -= tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-})
-$("#odd").on("click", function(){
-    if(randomizer % 2 != 0){
-        tokens += tokensPlaced
-    }else{
-        tokens -= tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-})
-$("#chooseFirstDiv").on("click", function(){
-    if(randomizer <= 12){
-        tokens += tokensPlaced * 2;
-    }else{
-        tokens -= tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-})
-$("#chooseSecondDiv").on("click", function(){
-    if(randomizer <= 24 && randomizer > 12){
-        tokens += tokensPlaced * 2;
-    }else{
-        tokens -= tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
-})
-$("#chooseThirdDiv").on("click", function(){
-    if(randomizer <= 36 && randomizer > 24){
-        tokens += tokensPlaced * 2;
-    }else{
-        tokens -= tokensPlaced;
-    }randomizer = Math.ceil(Math.random()*36);
+    if (randy == 34 && num34 >= 1) {
+        tokens += num34 * 30;
+    }
+    if (randy == 35 && num35 >= 1) {
+        tokens += num35 * 30;
+    }
+    if (randy == 36 && num36 >= 1) {
+        tokens += num36 * 30;
+    }
+    if (randy % 2 === 0 && even >= 1) {
+        tokens += even * 2;
+    }
+    if (randy % 2 != 0 && odd >= 1) {
+        tokens += odd * 2;
+    }
+    if (randy % 2 == 0 && red >= 1) {
+        tokens += red * 2;
+    }
+    if (randy % 2 != 0 && black >= 1) {
+        tokens += black * 2;
+    }
+    if (randy <= 12 && toTwelve >= 1) {
+        tokens += toTwelve * 3;
+    }
+    if (randy >= 12 && randy <= 24 && toTwentyFour >= 1) {
+        tokens += toTwentyFour * 3;
+    }
+    if (randy >= 24 && randy <= 36 && toThirtySix >= 1) {
+        tokens += toThirtySix * 3;
+    }
+    if (randy <= 18 && toEighteen >= 1) {
+        tokens += toEighteen * 2;
+    }
+    if (randy <= 36 && randy >= 18 && toThirtySix2 >= 1) {
+        tokens += toThirtySix2 * 2;
+    }
+    randy = Math.ceil(Math.random() * 36);
+    console.log(randy)
 })
